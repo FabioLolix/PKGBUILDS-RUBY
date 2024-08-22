@@ -6,7 +6,7 @@ pkgver=4.1.2
 pkgrel=2
 pkgdesc='Ruby/GTK4 is a Ruby binding of GTK+-4.x.'
 arch=(x86_64)
-url=https://ruby-gnome2.osdn.jp/
+url="https://github.com/ruby-gnome/ruby-gnome"
 license=("LGPL-2.1+")
 depends=(gtk4 ruby ruby-atk=$pkgver ruby-gdk4=$pkgver)
 options=(!emptydirs)

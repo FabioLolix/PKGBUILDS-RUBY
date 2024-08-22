@@ -7,7 +7,7 @@ pkgver=4.1.2
 pkgrel=2
 pkgdesc='Ruby/ATK is a Ruby binding of ATK-1.0.x.'
 arch=(x86_64)
-url='http://ruby-gnome2.sourceforge.jp/'
+url="https://github.com/ruby-gnome/ruby-gnome"
 license=(LGPL2.1)
 depends=(ruby atk ruby-glib2=$pkgver)
 makedepends=(ruby-native-package-installer ruby-rake)
