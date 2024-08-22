@@ -1,0 +1,14 @@
+pkgbase = ruby-gnome-git
+	pkgdesc = Much Ruby, wow
+	pkgver = 4.2.2.r7.g295570c
+	pkgrel = 1
+	url = https://github.com/ruby-gnome/ruby-gnome
+	arch = x86_64
+	license = LGPL2.1
+	makedepends = ruby-pkg-config
+	makedepends = ruby-native-package-installer
+	depends = ruby
+	source = git+https://github.com/ruby-gnome/ruby-gnome.git
+	sha256sums = SKIP
+
+pkgname = ruby-gnome-git

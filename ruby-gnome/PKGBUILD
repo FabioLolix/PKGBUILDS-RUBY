@@ -1,0 +1,26 @@
+
+pkgbase=ruby-gnome
+pkgname=(ruby-gnome)
+pkgver=4.2.2
+pkgrel=1
+pkgdesc="Much Ruby, wow"
+arch=(x86_64)
+url="https://github.com/ruby-gnome/ruby-gnome"
+license=(LGPL2.1)
+depends=(ruby )
+makedepends=(ruby-pkg-config ruby-native-package-installer)
+source=("git+https://github.com/ruby-gnome/ruby-gnome.git#tag=${pkgver}")
+sha256sums=('SKIP')
+
+export CC=/usr/bin/gcc-13 CXX=/usr/bin/g++-13
+
+build() {
+  cd ruby-gnome
+  ruby extconf.rb
+  make
+}
+
+package() {
+  cd ruby-gnome
+  make DESTDIR="${pkgdir}" install
+}
