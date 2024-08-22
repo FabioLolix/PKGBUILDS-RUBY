@@ -11,9 +11,8 @@ url="https://github.com/ruby-gnome/ruby-gnome"
 license=(LGPL2.1)
 depends=(ruby ruby-cairo ruby-glib2)
 options=(!emptydirs)
-source=(https://rubygems.org/downloads/$_gemname-$pkgver.gem)
-noextract=($_gemname-$pkgver.gem)
-sha256sums=('4a151c4676dd64d0eb47a4c930c277c96dce57b8a373cc0b0b9e4235fdf1be8f')
+source=("ruby-gnome-${pkgver}.tar.gz::https://github.com/ruby-gnome/ruby-gnome/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('64f2f53e9733e85d1b5c10c684858ff5924a0c7175c344ed01270fc018ea983d')
 
 package() {
   local _gemdir="$(ruby -e'puts Gem.default_dir')"
